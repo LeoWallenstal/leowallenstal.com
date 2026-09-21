@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="XSS: the idea, the build, and lessons learned. A personal project showcase.">
+  <title>XSS — Project showcase</title>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/projects/projects.css">
+</head>
+
+<body>
+  <!--#include virtual="/includes/header.html" -->
+  <main id="main" class="page-content">
+    <div class="container project-showcase">
+      <section class="project-hero" aria-labelledby="title">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <span class="origin-badge origin-home mb-3 d-inline-block">Universitetsprojekt</span>
+              <h1 class="hero-title mb-4">XSS</h1>
+              <p class="hero-copy">En webbapplikation för försäljning av evenemangsbiljetter, utvecklad för att
+                demonstrera XSS-sårbarheter genom osäker hantering och lagring av användaromdömen. Projektet skapades
+                som en del av en kortare uppsats inom kursen Datasäkerhet.
+              </p>
+              <div class="mt-4">
+                <span class="tech">Input Validation</span>
+                <span class="tech">Input Sanitization</span>
+                <span class="tech">Cybersecurity</span>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img class="detail-image" src="/assets/images/projects/xss/xss-display.png" alt="XSS interface preview">
+            </div>
+          </div>
+      </section>
+
+      <section id="gallery" class="gallery-section" aria-labelledby="gallery-title">
+        <div class="gallery-heading">
+          <div class="section-label"><span>En närmare titt</span>
+            <h2 id="gallery-title">Bilder från projektet.</h2>
+          </div>
+        </div>
+        <div class="gallery-grid">
+          <figure>
+            <div class="image-placeholder detail-image">
+
+              <img src="/assets/images/projects/xss/1.png" alt="">
+          </figure>
+          <figure>
+            <div class="image-placeholder detail-image alternate">
+              <img src="/assets/images/projects/xss/2.png" alt="">
+          </figure>
+        </div>
+      </section>
+      <section class="story-section" aria-labelledby="role-title">
+        <div class="section-label"><span>Lärdomar</span>
+          <h2 id="role-title">Vad jag<br>tar med mig.</h2>
+        </div>
+        <div class="section-content">
+          <div class="text-block">
+            <h3>Vad jag lärde mig</h3>
+            <p class="prompt">
+              Detta var det första utvecklingsprojektet jag genomförde självständigt under min utbildning. Även om
+              själva hemsidan inte var projektets huvudsakliga fokus gav arbetet mig möjlighet att utveckla mina
+              färdigheter inom både webbutveckling och cybersäkerhet. Projektet gav mig även värdefull erfarenhet av att
+              självständigt planera och genomföra utvecklingen av en webbapplikation.
+            </p>
+          </div>
+          <div class="text-block">
+            <p class="prompt">Genom projektet fick jag en djupare förståelse för XSS-sårbarheter och hur
+              webbapplikationer kan skyddas mot dem. Jag lärde mig mer om hur användarinmatning kan hanteras och
+              valideras på ett säkert sätt, samt hur olika säkerhetsåtgärder kan implementeras för att minska risken för
+              sårbarheter i en webbapplikation.
+            </p>
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+    </div>
+  </main>
+  <!--#include virtual="/includes/footer.html" -->
+  <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // The shared header uses a relative projects URL; resolve it from the site root here.
+    document.querySelectorAll('.site-nav a[href="projects"]').forEach(function (link) {
+      link.setAttribute('href', '/projects');
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RSS: the idea, the build, and lessons learned. A personal project showcase.">
+  <title>RSS — Project showcase</title>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/projects/projects.css">
+</head>
+
+<body>
+  <!--#include virtual="/includes/header.html" -->
+  <main id="main" class="page-content">
+    <div class="container project-showcase">
+      <section class="project-hero" aria-labelledby="title">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <span class="origin-badge origin-home mb-3 d-inline-block">Universitetsprojekt</span>
+              <h1 class="hero-title mb-4">RSS</h1>
+              <p class="hero-copy">En RSS-läsare för podcasts där användaren kan prenumerera på olika poddar och samla
+                dem i ett personligt flöde. Poddarna kan organiseras och sorteras med hjälp av egna anpassade
+                kategorier.
+              </p>
+              <div class="mt-4">
+                <span class="tech">RSS</span>
+                <span class="tech">Git</span>
+                <span class="tech">Java Swing</span>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img class="detail-image" src="/assets/images/projects/poddmakarna/poddmakarna-display.png"
+                alt="RSS interface preview">
+            </div>
+          </div>
+      </section>
+
+
+      <section class="story-section" aria-labelledby="role-title">
+        <div class="section-label"><span>Grupparbete</span>
+          <h2 id="role-title">Mitt<br>ansvarsområde.</h2>
+        </div>
+        <div class="section-content">
+          <div class="text-block">
+            <h3>Vad jag gjorde</h3>
+            <p class="prompt">Applikationen utvecklades i Java med hjälp av Swing i NetBeans, där MySQL användes för
+              lokal databaslagring. Mitt huvudansvar låg inom backend-utveckling och databasdesign. Tillsammans med
+              gruppmedlemmar utvecklade jag funktioner för att läsa in RSS-flöden och hantera datan för att kunna spara
+              olika podcasts till ett personligt flöde. Därefter implementerade vi funktionalitet för att skapa olika
+              kategorier och tilldela de sparade poddarna dessa kategorier. Vi implementerade även funktionalitet för
+              att automatiskt hämta och spara information om nya podcastavsnitt.</p>
+            </p>
+          </div>
+          <div class="text-block">
+            <p class="prompt">Vi stötte på flera utmaningar under projektets gång, bland annat att hantera olika
+              RSS-flöden som hade olika
+              strukturer och format. Vi behövde analysera och anpassa vår kod för att kunna läsa in dessa flöden på ett
+              korrekt sätt. Jag lärde mig mycket om hur man arbetar med RSS-flöden och hur man kan hantera olika typer
+              av
+              data i en applikation. Vi lärde oss också en hel del om versionshantering och samarbete i ett team. Vi
+              stötte på en del buggar och oväntade beteenden under projektets gång vilket gav oss värdefull erfarenhet.
+            </p>
+            </p>
+          </div>
+          <div class="challenge-card">
+            <p class="eyebrow">Utmaningar & höjdpunkter</p>
+            <h3>Den största utmaningen</h3>
+            <p class="prompt">Den största utmaningen var att designa ett användarvänligt gränssnitt som vi alla var
+              nöjda med. Vi diskuterade olika designalternativ och arbetade tillsammans för att skapa en användarvänlig
+              upplevelse och kompromissade fram en lösning.</p>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="takeaways" class="story-section" aria-labelledby="takeaways-title">
+        <div class="section-label"><span>Tillbakablick</span>
+          <h2 id="takeaways-title">Vad jag<br>tar med mig.</h2>
+        </div>
+        <div class="section-content">
+          <div class="text-block">
+            <h3>Vad jag lärde mig</h3>
+            <p class="prompt">Genom att arbeta med detta projekt lärde jag mig mycket om RSS-flöden och hur man kan
+              hantera olika typer av data i en applikation. Utöver det så fick jag möjligheten att vidareutveckla mina
+              färdigheter inom grupparbete och kommunikation. Jag fick också djupare förståelse för programmering och
+              versionshantering.</p>
+          </div>
+          <div class="text-block">
+            <h3>Något som var kul</h3>
+            <p class="prompt">Vi stötte på många intressanta utmaningar under projektets gång, vilket gjorde det roligt
+              att arbeta med. Det var också väldigt uppmuntrande att se hur vår kod utvecklades och hur vi kunde lösa
+              problem tillsammans. Vi stötte på flera buggar och oväntat beteende som gav oss värdefull erfarenhet och
+              det var en stor tillfredsställelse att se hur vi kunde övervinna dessa utmaningar.</p>
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+  <!--#include virtual="/includes/footer.html" -->
+  <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // The shared header uses a relative projects URL; resolve it from the site root here.
+    document.querySelectorAll('.site-nav a[href="projects"]').forEach(function (link) {
+      link.setAttribute('href', '/projects');
+    });
+  </script>
+</body>
+
+</html>

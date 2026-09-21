@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Connecta: the idea, the build, and lessons learned. A personal project showcase.">
+  <title>Connecta — Project showcase</title>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/projects/projects.css">
+</head>
+
+<body>
+  <!--#include virtual="/includes/header.html" -->
+  <main id="main" class="page-content">
+    <div class="container project-showcase">
+      <section class="project-hero" aria-labelledby="title">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <span class="origin-badge origin-home mb-3 d-inline-block">Universitetsprojekt</span>
+              <h1 class="hero-title mb-4">Connecta</h1>
+              <p class="hero-copy">En portfoliohemsida utvecklad med .NET och ASP.NET MVC. Projektet fokuserade på att
+                skapa en strukturerad webbapplikation där användare kan presentera sin profil, erfarenheter och projekt.
+              </p>
+              <div class="mt-4">
+                <span class="tech">.NET</span>
+                <span class="tech">ASP.NET MVC</span>
+                <span class="tech">C#</span>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img class="detail-image" src="/assets/images/projects/portfolio-project/portfolio-project-display.png"
+                alt="Connecta interface preview">
+            </div>
+          </div>
+      </section>
+
+
+      <section class="story-section" aria-labelledby="role-title">
+        <div class="section-label"><span>Grupparbete</span>
+          <h2 id="role-title">Mitt<br>ansvarsområde.</h2>
+        </div>
+        <div class="section-content">
+          <div class="text-block">
+            <h3>Vad jag gjorde</h3>
+            <p class="prompt">Projektet utfördes i grupp och även om vi hjälptes åt med hela projektet och
+              parprogrammerade en hel del så delade vi upp olika ansvarsområden. Mina två huvudansvarsområden var att
+              designa och utveckla användargränssnittet för en användares profil samt att designa och utveckla
+              användargränssnittet och back-end funktionaliteten för privatmeddelanden både mellan inloggade användare
+              och anonyma användare.
+            </p>
+          </div>
+          <div class="text-block">
+            <p class="prompt">Användares profilsida antar olika utseenden dynamiskt beroende på användarens val. Under
+              färdigheter, utbildning och erfarenheter visas det som användaren själv lagt in. Om profilen är låst visas
+              det med ett hänglås uppe till vänster och då kan endast den inloggade användaren se
+              innehållet och anonyma användare hänvisas till att skicka ett meddelande.</p>
+          </div>
+          <div class="challenge-card">
+            <p class="eyebrow">Utmaningar & höjdpunkter</p>
+            <h3>Den största utmaningen</h3>
+            <p class="prompt">Den största utmaningen var att hantera privata meddelanden mellan inloggade användare
+              och icke inloggade användare. Detta krävde en noggrann design av både front-end och back-end för att
+              säkerställa att meddelanden kunde skickas och tas emot på ett säkert sätt, samtidigt som
+              användarupplevelsen förblev smidig. Jag löste det genom att ge varje konversation ett unikt id vilket
+              tillät icke inloggade
+              användare att navigera tillbaka till konversationen medans den dök upp som vanligt i inloggade användares
+              flöde.</p>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="gallery" class="gallery-section" aria-labelledby="gallery-title">
+        <div class="gallery-heading">
+          <div class="section-label"><span>En närmare titt</span>
+            <h2 id="gallery-title">Bilder från projektet.</h2>
+          </div>
+        </div>
+        <div class="gallery-grid">
+          <figure>
+            <div class="image-placeholder detail-image">
+
+              <img src="/assets/images/projects/portfolio-project/chat1.png" alt="">
+          </figure>
+          <figure>
+            <div class="image-placeholder detail-image alternate">
+              <img src="/assets/images/projects/portfolio-project/chat2.png" alt="">
+          </figure>
+        </div>
+      </section>
+      <section id="takeaways" class="story-section" aria-labelledby="takeaways-title">
+        <div class="section-label"><span>Tillbakablick</span>
+          <h2 id="takeaways-title">Vad jag<br>tar med mig.</h2>
+        </div>
+        <div class="section-content">
+          <div class="text-block">
+            <h3>Vad jag lärde mig</h3>
+            <p class="prompt">Under projektet lärde jag mig att utveckla webbapplikationer med ASP.NET MVC och fick en
+              bättre förståelse för hur Model, View och Controller samverkar för att skapa en tydlig struktur i
+              applikationen. Jag fick även erfarenhet av ett Code First-arbetssätt, där databasen utformas och
+              uppdateras utifrån de modeller och relationer som definieras i koden.</p>
+          </div>
+          <div class="text-block">
+            <h3>Vad jag skulle göra annorlunda</h3>
+            <p class="prompt">I efterhand hade jag lagt mer tid på att planera applikationens struktur och datamodell
+              innan utvecklingen påbörjades. Eftersom projektet var min första erfarenhet av ASP.NET MVC förändrades
+              strukturen flera gånger under arbetets gång. Med den kunskap jag har idag hade jag kunnat skapa en
+              tydligare struktur från början och minska behovet av omarbetning.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+  <!--#include virtual="/includes/footer.html" -->
+  <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // The shared header uses a relative projects URL; resolve it from the site root here.
+    document.querySelectorAll('.site-nav a[href="projects"]').forEach(function (link) {
+      link.setAttribute('href', '/projects');
+    });
+  </script>
+</body>
+
+</html>

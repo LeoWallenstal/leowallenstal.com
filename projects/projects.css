@@ -203,7 +203,7 @@
     grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
     gap: 4rem;
     padding-block: 4rem;
-    border-bottom: 1px solid var(--line);
+    border-top: 1px solid var(--line);
 }
 
 .project-showcase .section-label {
@@ -258,7 +258,7 @@
 
 .project-showcase .gallery-section {
     padding-block: 4rem;
-    border-bottom: 1px solid var(--line);
+    border-top: 1px solid var(--line);
 }
 
 .project-showcase .gallery-heading {

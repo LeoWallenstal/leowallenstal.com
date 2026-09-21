@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NGO: the idea, the build, and lessons learned. A personal project showcase.">
+  <title>NGO — Project showcase</title>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/projects/projects.css">
+</head>
+
+<body>
+  <!--#include virtual="/includes/header.html" -->
+  <main id="main" class="page-content">
+    <div class="container project-showcase">
+      <section class="project-hero" aria-labelledby="title">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <span class="origin-badge origin-home mb-3 d-inline-block">Universitetsprojekt</span>
+              <h1 class="hero-title mb-4">NGO</h1>
+              <p class="hero-copy">En intranätapplikation för en fiktiv icke-statlig organisation som utvecklades i Java
+                med hjälp av Swing i
+                NetBeans, där MySQL användes för lokal databaslagring.
+              </p>
+              <div class="mt-4">
+                <span class="tech">MySQL</span>
+                <span class="tech">Git</span>
+                <span class="tech">Java Swing</span>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <img class="detail-image" src="/assets/images/projects/ngo/ngo-display.png" alt="NGO interface preview">
+            </div>
+          </div>
+      </section>
+
+
+      <section class="story-section" aria-labelledby="role-title">
+        <div class="section-label"><span>Grupparbete</span>
+          <h2 id="role-title">Mitt<br>ansvarsområde.</h2>
+        </div>
+        <div class="section-content">
+          <div class="text-block">
+            <h3>Vad jag gjorde</h3>
+            <p class="prompt">Detta var det första utvecklingsprojektet jag gjorde under min utbildning och alla i min
+              grupp hade begränsad erfarenhet av programmering. Vi satt därför väldigt mycket tillsammans och hjälpte
+              varandra med kodning, felsökning och problemlösning. Mitt huvudansvar var att utveckla funktioner för att
+              hantera användarroller och behörigheter i applikationen.
+              Jag bidrog också till att designa
+              databasstrukturen och skriva SQL-frågor för att hämta och lagra data i MySQL-databasen.
+            </p>
+          </div>
+          <div class="text-block">
+            <p class="prompt">Flera av oss stötte på git-konflikter under projektets gång, vilket gav oss värdefull
+              erfarenhet av versionshantering och samarbete i ett team. Vi lärde oss att kommunicera tydligt om vilka
+              ändringar vi gjorde i koden och hur vi kunde lösa konflikter på ett effektivt sätt.
+            </p>
+          </div>
+          <div class="challenge-card">
+            <p class="eyebrow">Utmaningar & höjdpunkter</p>
+            <h3>Den största utmaningen</h3>
+            <p class="prompt">Projektet pågick över jul vilket ledde till en del utmaningar i att hålla projektet på
+              spåret och samarbeta effektivt med gruppmedlemmar under semesterperioden. Vi delade upp arbetet för att
+              kunna fortsätta individuellt och det var en utmaning när vi återförenades eftersom vi alla hade arbetat
+              med olika delar av projektet och helt plötsligt hade stora delar av kod vi inte hade någon kunskap om.</p>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="gallery" class="gallery-section" aria-labelledby="gallery-title">
+        <div class="gallery-heading">
+          <div class="section-label"><span>En närmare titt</span>
+            <h2 id="gallery-title">Bilder från projektet.</h2>
+          </div>
+        </div>
+        <div class="gallery-grid">
+          <figure>
+            <div class="image-placeholder detail-image">
+
+              <img src="/assets/images/projects/ngo/1.png" alt="">
+          </figure>
+          <figure>
+            <div class="image-placeholder detail-image alternate">
+              <img src="/assets/images/projects/ngo/2.png" alt="">
+          </figure>
+        </div>
+      </section>
+      <section id="takeaways" class="story-section" aria-labelledby="takeaways-title">
+        <div class="section-label"><span>Tillbakablick</span>
+          <h2 id="takeaways-title">Vad jag<br>tar med mig.</h2>
+        </div>
+        <div class="section-content">
+          <div class="text-block">
+            <h3>Vad jag lärde mig</h3>
+            <p class="prompt">Stor del av arbetet bestod av problemlösning och felsökning. Vi stötte på många buggar och
+              oväntade beteenden i applikationen, vilket krävde att vi analyserade koden och
+              testade olika lösningar. Jag lärde mig mycket om hur man felsöker och identifierar problem i en Java
+              Swing-applikation, samt hur man samarbetar effektivt i ett team för att lösa problem tillsammans. Utöver
+              detta fick jag också lära mig mer om objektorienterad programmering, databasintegration och
+              versionshantering genom Git.</p>
+          </div>
+          <div class="text-block">
+            <h3>Något som var kul</h3>
+            <p class="prompt">Det var väldigt kul att få arbeta med ett projekt som hade en tydlig användargränssnitt
+              och där vi kunde se resultatet av vårt arbete direkt. Att kunna interagera med applikationen och se hur
+              våra ändringar påverkade användarupplevelsen var mycket givande och motiverande. Jag uppskattade också
+              möjligheten att arbeta i ett team och lära mig av mina gruppmedlemmars erfarenheter och kunskaper.</p>
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+  <!--#include virtual="/includes/footer.html" -->
+  <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // The shared header uses a relative projects URL; resolve it from the site root here.
+    document.querySelectorAll('.site-nav a[href="projects"]').forEach(function (link) {
+      link.setAttribute('href', '/projects');
+    });
+  </script>
+</body>
+
+</html>

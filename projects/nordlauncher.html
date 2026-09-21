@@ -23,6 +23,9 @@
             <div class="col-lg-6">
               <span class="origin-badge origin-home mb-3 d-inline-block">Hobbyprojekt</span>
               <h1 class="hero-title mb-4">Launcher Nordrevived</h1>
+              <img class="detail-image d-md-none mb-4"
+                src="/assets/images/projects/nordlauncher/nordlauncher-display.png"
+                alt="NordLauncher interface preview">
               <p class="hero-copy">Jag utvecklade en modern game launcher med Tauri, där HTML och JavaScript användes
                 för frontend och Rust för backend. Launchern skapades för att förenkla installation, uppdatering och
                 start av spelet, som tidigare krävde flera manuella steg. Genom att automatisera uppdateringsprocessen
@@ -34,131 +37,81 @@
                 <span class="tech">UI/UX Design</span>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 d-none d-md-block">
               <img class="detail-image" src="/assets/images/projects/nordlauncher/nordlauncher-display.png"
                 alt="NordLauncher interface preview">
             </div>
           </div>
       </section>
-      <!-- Replace each .image-placeholder div with an img element pointing to your screenshot. Include descriptive alt text. -->
-      <figure class="featured-image">
-        <div class="image-placeholder main-image"><span class="image-tag">01 / The first impression</span>
-          <div class="placeholder-center"><span class="plus" aria-hidden="true">＋</span><span>Your project, front and
-              center</span><small>Add your best NordLauncher screenshot here</small></div><span
-            class="image-size">Suggested ratio · 16:9</span>
-        </div>
-        <figcaption><span>01 — Main interface</span><span>Show the screen that best explains the project.</span>
-        </figcaption>
-      </figure>
-      <aside class="project-facts" aria-label="Project details">
-        <div><span>My role</span>
-          <p>[Your responsibilities]</p>
-        </div>
-        <div><span>Built with</span>
-          <p>[Languages / tools]</p>
-        </div>
-        <div><span>Timeline</span>
-          <p>[When / how long]</p>
-        </div>
-        <div><span>Status</span>
-          <p>[In progress / released]</p>
-        </div>
-      </aside>
+
       <section id="overview" class="story-section" aria-labelledby="overview-title">
-        <div class="section-label"><span>01 / The idea</span>
-          <h2 id="overview-title">Why I built it.</h2>
-        </div>
-        <div class="section-content">
-          <p class="section-intro">Every project starts with a reason.<br>This is where you share yours.</p>
-          <div class="text-block">
-            <h3>The reason &amp; description</h3>
-            <p class="prompt">What problem or frustration inspired NordLauncher? Describe what it does and who would use
-              it. Explain why you wanted to build it yourself.</p>
-          </div>
-          <div class="text-block">
-            <h3>What I set out to do</h3>
-            <p class="prompt">Describe two or three goals. Was your focus a simpler experience, a useful feature, or
-              learning something new? Explain what a successful result would look like.</p>
-          </div>
-        </div>
-      </section>
-      <section class="story-section" aria-labelledby="role-title">
-        <div class="section-label"><span>02 / Behind the build</span>
-          <h2 id="role-title">My role.<br>My decisions.</h2>
+        <div class="section-label"><span>Idén</span>
+          <h2 id="overview-title">Varför jag byggde den.</h2>
         </div>
         <div class="section-content">
           <div class="text-block">
-            <h3>What I worked on</h3>
-            <p class="prompt">Explain your responsibilities: planning, design, development, testing, or all of the
-              above. If you worked with others, make your contribution clear and credit theirs.</p>
+            <h3>Bakgrund</h3>
+            <p class="prompt">Nordrevived är ett projekt där man genom reverse engineering av ett gammalt spel har
+              lyckats återuppliva det på nytt. När jag först gick med insåg jag tidigt ett behov av att förenkla
+              installation och uppdatering av spelet. Innan denna launchern fanns var processen för att installera och
+              uppdatera
+              spelet för komplicerad för målgruppen, vilket ledde till frustration bland spelarna. De var först tvungna
+              att ladda ner en zip-fil och extrahera den manuellt och därefter använda olika skriptfiler för att starta
+              spelet beroende på deras operativsystem. De var också tvungna att hålla koll på de senaste uppdateringarna
+              själva och manuellt ladda ner och installera dem på nytt, vilket ofta ledde till att spelare använde fel
+              version
+              av spelet och rapporterade buggar som redan var åtgärdade och i vissa fall att de inte ens kunde starta
+              spelet alls.</p>
+            </p>
           </div>
           <div class="text-block">
-            <h3>How I built it</h3>
-            <p class="prompt">Introduce the main tools and technologies, and why you chose them. Walk through one
-              important decision and the tradeoffs you considered.</p>
-          </div>
-          <div class="challenge-card">
-            <p class="eyebrow">A moment worth sharing</p>
-            <h3>The biggest challenge</h3>
-            <p class="prompt">Pick one specific obstacle. What went wrong, what did you try, and what finally worked? A
-              concrete example makes the story more memorable.</p>
+            <h3>Mitt mål</h3>
+            <p class="prompt">Målet med Nord Launcher var att skapa en mer användarvänlig och effektiv lösning där
+              användarna enkelt
+              kan installera och uppdatera spelet utan att behöva bekanta sig med komplexa processer. Jag ville att
+              användarna skulle kunna ladda ner och installera launchern en gång och sedan därifrån automatiskt få
+              uppdateringar när de är tillgängliga.</p>
           </div>
         </div>
       </section>
       <section id="gallery" class="gallery-section" aria-labelledby="gallery-title">
         <div class="gallery-heading">
-          <div class="section-label"><span>03 / A closer look</span>
-            <h2 id="gallery-title">The project in pictures.</h2>
+          <div class="section-label"><span>En närmare titt</span>
+            <h2 id="gallery-title">Bilder från projektet.</h2>
           </div>
-          <p>From the bigger picture<br>to the little details.</p>
         </div>
         <div class="gallery-grid">
           <figure>
-            <div class="image-placeholder detail-image"><span class="image-tag">02 / In action</span>
-              <div class="placeholder-center"><span class="plus" aria-hidden="true">＋</span><span>A feature worth
-                  showing</span><small>Add a screenshot of the main workflow</small></div>
-            </div>
-            <figcaption><span>02 — The experience</span><span>Explain what the user can do in this view.</span>
-            </figcaption>
+            <div class="image-placeholder detail-image">
+
+              <img src="/assets/images/projects/nordlauncher/2.png" alt="">
           </figure>
           <figure>
-            <div class="image-placeholder detail-image alternate"><span class="image-tag">03 / The details</span>
-              <div class="placeholder-center"><span class="plus" aria-hidden="true">＋</span><span>Something you’re proud
-                  of</span><small>Add a detail, early sketch, or comparison</small></div>
-            </div>
-            <figcaption><span>03 — A closer look</span><span>Point out a detail and why it matters.</span></figcaption>
+            <div class="image-placeholder detail-image alternate">
+              <img src="/assets/images/projects/nordlauncher/1.png" alt="">
           </figure>
         </div>
       </section>
       <section id="takeaways" class="story-section" aria-labelledby="takeaways-title">
-        <div class="section-label"><span>04 / Looking back</span>
-          <h2 id="takeaways-title">What I’m<br>taking with me.</h2>
+        <div class="section-label"><span>Tillbakablick</span>
+          <h2 id="takeaways-title">Vad jag<br>tar med mig.</h2>
         </div>
         <div class="section-content">
           <div class="text-block">
-            <h3>What I learned</h3>
-            <p class="prompt">Share the skills or understanding you gained. Include something technical and something
-              about your approach to building a project.</p>
+            <h3>Vad jag lärde mig</h3>
+            <p class="prompt">Jag lärde mig mycket från detta projekt, särskilt när det gäller att skapa användarvänliga
+              gränssnitt och att förstå behovet av enkel installation och uppdatering av programvara. Jag lärde mig även
+              att utveckla och bygga system mot olika operativsystem. Detta projekt ledde mig till att införskaffa
+              enheter med olika operativsystem så som Linux och macOS för att på detta sätt kunna testa och optimera
+              launchern för olika plattformar.</p>
           </div>
           <div class="text-block">
-            <h3>What I would do differently</h3>
-            <p class="prompt">Reflect on a decision you would revisit. What would you change if you started again, and
-              why?</p>
-          </div>
-          <div class="text-block">
-            <h3>Where it goes next</h3>
-            <p class="prompt">Describe the current outcome and what is still unfinished. Add any real feedback or
-              results, then share the next improvement you would like to make.</p>
+            <h3>Vad jag skulle göra annorlunda</h3>
+            <p class="prompt">Om jag började igen skulle jag fokusera mer på att först skapa en minsta viable product
+              (MVP) och sedan iterera på den baserat på feedback från användare istället för att försöka skapa en
+              perfekt lösning direkt.</p>
           </div>
         </div>
-      </section>
-      <!-- Replace the following prompt with real repository, download, or demo links when available. -->
-      <section class="project-links" aria-labelledby="links-title">
-        <div>
-          <p class="eyebrow">Keep exploring</p>
-          <h2 id="links-title">See the work for yourself.</h2>
-        </div>
-        <p class="prompt">Add your repository, download,<br>or live demo links here.</p>
       </section>
     </div>
   </main>
