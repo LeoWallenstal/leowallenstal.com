@@ -79,7 +79,8 @@
     font-size: 1.5rem;
 }
 
-.project-showcase figure {
+.project-showcase figure,
+.project-showcase .gallery-item {
     margin: 0;
     min-width: 0;
 }
@@ -89,10 +90,6 @@
     display: grid;
     place-items: center;
     overflow: hidden;
-    background: linear-gradient(145deg, #0f756d 0%, #27486b 50%, #2f3237 100%);
-    color: #fff;
-    border: 1px solid rgba(255, 255, 255, .7);
-    border-radius: 16px;
     box-shadow: 0 24px 70px rgba(21, 32, 51, .16);
 }
 
@@ -149,7 +146,8 @@
     font-size: .8rem;
 }
 
-.project-showcase figure img {
+.project-showcase figure img,
+.project-showcase .gallery-item img {
     display: block;
     width: 100%;
     height: auto;
@@ -281,9 +279,10 @@
     gap: 1.5rem;
 }
 
-.project-showcase .alternate {
-    background: linear-gradient(145deg, #27486b, #134e4a);
+.project-showcase .gallery-grid .gallery-item {
+    align-self: center;
 }
+
 
 .project-showcase .gallery-grid figcaption {
     flex-direction: column;
