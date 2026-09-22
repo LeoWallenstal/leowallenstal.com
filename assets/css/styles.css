@@ -70,6 +70,32 @@ body {
     max-width: 690px;
 }
 
+.about-section {
+    padding: 0 0 2.75rem;
+}
+
+.about-content {
+    max-width: 700px;
+}
+
+.about-content h2 {
+    margin: 0 0 0.8rem;
+    color: var(--accent-dark);
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.about-text p {
+    color: var(--muted);
+    line-height: 1.65;
+    margin-bottom: 0.9rem;
+}
+
+.about-text p:last-child {
+    margin-bottom: 0;
+}
+
 .btn-accent {
     background: var(--accent);
     border-color: var(--accent);
@@ -321,6 +347,10 @@ body {
     margin: 0;
 }
 
+.work-item p + p {
+    margin-top: 0.85rem;
+}
+
 .work-more.show {
     display: grid;
     gap: 1.1rem;
@@ -339,6 +369,24 @@ body {
 a {
     color: var(--muted);
     text-decoration: none;
+}
+
+.footer nav a {
+    color: inherit;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer nav a:hover {
+    transform: translateY(-3px);
+    opacity: 0.7;
+}
+
+.footer nav svg {
+    width: 26px;
+    height: 26px;
 }
 
 @media (max-width: 767.98px) {
