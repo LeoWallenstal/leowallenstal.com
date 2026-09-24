@@ -22,8 +22,12 @@
             <div class="col-lg-6">
               <span class="origin-badge origin-home mb-3 d-inline-block">Universitetsprojekt</span>
               <h1 class="hero-title mb-4">Connecta</h1>
+              <img class="detail-image d-md-none mb-4" src="/assets/images/projects/connecta/connecta-display.png"
+                alt="Connecta interface preview">
               <p class="hero-copy">En portfoliohemsida utvecklad med .NET och ASP.NET MVC. Projektet fokuserade på att
-                skapa en strukturerad webbapplikation där användare kan presentera sin profil, erfarenheter och projekt.
+                skapa en strukturerad webbapplikation där användare kan presentera sin profil, erfarenheter och
+                projekt. Applikationen utvecklades enligt MVC-arkitekturen med tydlig separation mellan modell, vy och
+                controller.
               </p>
               <div class="mt-4">
                 <span class="tech">.NET</span>
@@ -31,7 +35,7 @@
                 <span class="tech">C#</span>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 d-none d-md-block">
               <img class="detail-image" src="/assets/images/projects/connecta/connecta-display.png"
                 alt="Connecta interface preview">
             </div>
@@ -46,31 +50,45 @@
         <div class="section-content">
           <div class="text-block">
             <h3>Vad jag gjorde</h3>
-            <p class="prompt">Projektet utfördes i grupp och även om vi hjälptes åt med hela projektet och
-              parprogrammerade en hel del så delade vi upp olika ansvarsområden. Mina två huvudansvarsområden var att
-              designa och utveckla användargränssnittet för en användares profil samt att designa och utveckla
-              användargränssnittet och back-end funktionaliteten för privatmeddelanden både mellan inloggade användare
-              och anonyma användare.
+            <p class="prompt">Projektet genomfördes i grupp, där vi samarbetade kring hela utvecklingsprocessen och
+              regelbundet använde parprogrammering. Samtidigt delades projektet upp i olika ansvarsområden. Mina
+              huvudsakliga ansvarsområden var att
+              designa och utveckla användargränssnittet samt back-end funktionaliteten för användarprofiler och
+              privatmeddelanden mellan både inloggade och
+              anonyma användare.
             </p>
           </div>
           <div class="text-block">
-            <p class="prompt">Användares profilsida antar olika utseenden dynamiskt beroende på användarens val. Under
-              färdigheter, utbildning och erfarenheter visas det som användaren själv lagt in. Om profilen är låst visas
-              det med ett hänglås uppe till vänster och då kan endast den inloggade användaren se
-              innehållet och anonyma användare hänvisas till att skicka ett meddelande.</p>
+            <p class="prompt">Användares profilsida anpassas dynamiskt utifrån profilens innehåll och användarens
+              inställningar. Sektioner för bland annat färdigheter, utbildning och erfarenheter genereras baserat på det
+              användaren själv lagt till. Användaren kan även välja att låsa sin profil, vilket gör att endast
+              inloggade användare kan se innehållet och anonyma användare hänvisas till att skicka ett meddelande.</p>
           </div>
-          <div class="challenge-card">
-            <p class="eyebrow">Utmaningar & höjdpunkter</p>
-            <h3>Den största utmaningen</h3>
-            <p class="prompt">Den största utmaningen var att hantera privata meddelanden mellan inloggade användare
-              och icke inloggade användare. Detta krävde en noggrann design av både front-end och back-end för att
-              säkerställa att meddelanden kunde skickas och tas emot på ett säkert sätt, samtidigt som
-              användarupplevelsen förblev smidig. Jag löste det genom att ge varje konversation ett unikt id vilket
-              tillät icke inloggade
-              användare att navigera tillbaka till konversationen medans den dök upp som vanligt i inloggade användares
-              flöde.</p>
-            </p>
+
+          <div class="text-block">
+            <p class="prompt">Meddelandefunktionen utvecklades för att möjliggöra privata konversationer mellan
+              användare, men även för att låta anonyma besökare kontakta en användare utan att behöva skapa ett konto.
+              Meddelanden lagras i en lokal MySQL-databas och kopplas till respektive konversation och användare.
+              Meddelandefunktionen har även stöd för emojis. Om en inloggad användare har olästa meddelanden visas en
+              notifikation i navigationsmenyn.
+              När en konversation med ett oläst meddelande öppnas markeras det som läst för avsändaren. </p>
           </div>
+        </div>
+        <div class="challenge-card">
+          <p class="eyebrow">Utmaningar & höjdpunkter</p>
+          <h3>Den största utmaningen</h3>
+          <p class="prompt">
+            Den största utmaningen var att hantera samma meddelandeflöde för både inloggade användare
+            och anonyma besökare. Jag behövde bygga en lösning där backend kunde skilja på vanliga
+            och anonyma konversationer, samtidigt som frontend fortfarande kändes enkel och sammanhängande.
+          </p>
+
+          <h3>En höjdpunkt</h3>
+          <p class="prompt">
+            En höjdpunkt var att få konversationerna att kännas dynamiska med partial views och JavaScript.
+            Användaren kan skicka meddelanden, använda emojis och se uppdaterad information utan att hela sidan
+            behöver laddas om.
+          </p>
         </div>
       </section>
       <section id="gallery" class="gallery-section" aria-labelledby="gallery-title">
@@ -81,10 +99,14 @@
         </div>
         <div class="gallery-grid">
           <div class="gallery-item">
-            <img class="detail-image" src="/assets/images/projects/connecta/chat1.png" alt="">
+            <img class="detail-image" src="/assets/images/projects/connecta/1.png" alt="">
+            <small><b>Inloggad chatt:</b> En vy där inloggade användare kan skicka och ta emot meddelanden innehållande
+              text eller emojis. När ett meddelande öppnas av mottagaren markeras det som läst.</small>
           </div>
           <div class="gallery-item">
-            <img class="detail-image" src="/assets/images/projects/connecta/chat2.png" alt="">
+            <img class="detail-image" src="/assets/images/projects/connecta/2.png" alt="">
+            <small><b>Anonym chatt:</b> En vy där anonyma användare kan skicka och ta emot meddelanden. För att navigera
+              tillbaka till konversationen som anonym behöver de använda ett unikt id i URL:en.</small>
           </div>
         </div>
       </section>
@@ -98,14 +120,21 @@
             <p class="prompt">Under projektet lärde jag mig att utveckla webbapplikationer med ASP.NET MVC och fick en
               bättre förståelse för hur Model, View och Controller samverkar för att skapa en tydlig struktur i
               applikationen. Jag fick även erfarenhet av ett Code First-arbetssätt, där databasen utformas och
-              uppdateras utifrån de modeller och relationer som definieras i koden.</p>
+              uppdateras utifrån de modeller och relationer som definieras i koden. </p>
+
+          </div>
+          <div class="text-block">
+            <p class="prompt"> Dessutom lärde jag mig hur autentisering och auktorisering kan implementeras i ASP.NET,
+              samt hur användares lösenord kan hanteras säkert med hashning och saltning.
+            </p>
           </div>
           <div class="text-block">
             <h3>Vad jag skulle göra annorlunda</h3>
-            <p class="prompt">I efterhand hade jag lagt mer tid på att planera applikationens struktur och datamodell
-              innan utvecklingen påbörjades. Eftersom projektet var min första erfarenhet av ASP.NET MVC förändrades
-              strukturen flera gånger under arbetets gång. Med den kunskap jag har idag hade jag kunnat skapa en
-              tydligare struktur från början och minska behovet av omarbetning.
+            <p class="prompt">Om jag genomförde projektet igen hade jag lagt större fokus på kontinuerlig kommunikation
+              inom gruppen och regelbundet följt upp hur arbetet gick inom de olika ansvarsområdena. Under projektet
+              blev det tydligt relativt sent att vissa delar hade halkat efter vilket ledde till mer tidspress mot
+              slutet. Med tydligare avstämningar hade vi kunnat upptäcka dessa problem tidigare och omfördela arbetet
+              för att säkerställa att alla delar av projektet höll samma tempo.
             </p>
           </div>
         </div>

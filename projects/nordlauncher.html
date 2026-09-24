@@ -22,19 +22,22 @@
           <div class="row g-5 align-items-center">
             <div class="col-lg-6">
               <span class="origin-badge origin-home mb-3 d-inline-block">Hobbyprojekt</span>
-              <h1 class="hero-title mb-4">Launcher Nordrevived</h1>
+              <h1 class="hero-title mb-4">NordLauncher</h1>
               <img class="detail-image d-md-none mb-4"
                 src="/assets/images/projects/nordlauncher/nordlauncher-display.png"
                 alt="NordLauncher interface preview">
-              <p class="hero-copy">Jag utvecklade en modern game launcher med Tauri, där HTML och JavaScript användes
-                för frontend och Rust för backend. Launchern skapades för att förenkla installation, uppdatering och
-                start av spelet, som tidigare krävde flera manuella steg. Genom att automatisera uppdateringsprocessen
-                säkerställer launchern även att alla spelare använder rätt version, vilket minskar versionskonflikter
-                med servern och felrapporter av redan åtgärdade buggar.</p>
+              <p class="hero-copy">En cross-platform launcher utvecklad med Tauri, där HTML och JavaScript användes för
+                frontend och Rust för
+                backend. Syftet med launchern är att förenkla installation, uppdatering och start av
+                spelet NordRevived. Launchern automatiserar tidigare manuella steg och ser till att spelaren alltid
+                använder
+                rätt
+                version.</p>
               <div class="mt-4">
                 <span class="tech">Cross-Platform Development</span>
-                <span class="tech">Update Automation</span>
                 <span class="tech">UI/UX Design</span>
+                <span class="tech">Rust</span>
+                <span class="tech">Tauri App Development</span>
               </div>
             </div>
             <div class="col-lg-6 d-none d-md-block">
@@ -51,26 +54,35 @@
         <div class="section-content">
           <div class="text-block">
             <h3>Bakgrund</h3>
-            <p class="prompt">Nordrevived är ett projekt där man genom reverse engineering av ett gammalt spel har
-              lyckats återuppliva det på nytt. När jag först gick med insåg jag tidigt ett behov av att förenkla
-              installation och uppdatering av spelet. Innan denna launchern fanns var processen för att installera och
-              uppdatera
-              spelet för komplicerad för målgruppen, vilket ledde till frustration bland spelarna. De var först tvungna
-              att ladda ner en zip-fil och extrahera den manuellt och därefter använda olika skriptfiler för att starta
-              spelet beroende på deras operativsystem. De var också tvungna att hålla koll på de senaste uppdateringarna
-              själva och manuellt ladda ner och installera dem på nytt, vilket ofta ledde till att spelare använde fel
-              version
-              av spelet och rapporterade buggar som redan var åtgärdade och i vissa fall att de inte ens kunde starta
-              spelet alls.</p>
-            </p>
+            <p class="prompt">NordRevived är ett projekt där ett gammalt nedlagt onlinespel har återupplivats genom
+              reverse-engineering. När jag gick med fanns det ett stort behov av att förenkla
+              installation, uppstart och uppdatering av spelet. Den befintliga processen var för komplicerad och
+              tekniskt krävande för
+              målgruppen, vilket ledde till frustration bland spelarna.</p>
           </div>
+
+          <div class="text-block">
+            <p class="prompt"> För att installera spelet var spelarna tvungna att manuellt ladda ner och extrahera
+              spelets filer, navigera till rätt
+              skriptfil för deras operativsystem och starta spelet genom konsolkommandon. Även uppdateringen av spelet
+              skedde
+              manuellt och innebar att när en ny uppdateringen släpptes var de tvugna att repetera
+              installationsproccessen. Eftersom det dessutom var svårt för spelarna att veta när en uppdatering hade
+              släppts var det ofta spelare
+              som rapporterade in
+              redan åtgärdade
+              buggar.</p>
+          </div>
+
           <div class="text-block">
             <h3>Mitt mål</h3>
-            <p class="prompt">Målet med Nord Launcher var att skapa en mer användarvänlig och effektiv lösning där
-              användarna enkelt
-              kan installera och uppdatera spelet utan att behöva bekanta sig med komplexa processer. Jag ville att
-              användarna skulle kunna ladda ner och installera launchern en gång och sedan därifrån automatiskt få
-              uppdateringar när de är tillgängliga.</p>
+            <p class="prompt">Målet med NordLauncher var att skapa en mer användarvänlig och effektiv lösning där
+              användarna inte behövde hantera dessa tekniska processer själva. Jag ville
+              att
+              de enbart skulle behöva ladda ner launchern en gång och därefter enkelt kunna installera, starta och
+              uppdatera spelet med några få klick. Målet
+              var även att launchern själv skulle identifiera användarens operativsystem och därefter välja rätt
+              startmetod.</p>
           </div>
         </div>
       </section>
@@ -83,9 +95,15 @@
         <div class="gallery-grid">
           <div class="gallery-item">
             <img class="detail-image" src="/assets/images/projects/nordlauncher/2.png" alt="">
+            <small><b>Huvudvy:</b> Här kan användaren välja server, se de senaste uppdateringarna samt
+              installera och starta spelet.
+            </small>
           </div>
           <div class="gallery-item">
             <img class="detail-image" src="/assets/images/projects/nordlauncher/1.png" alt="">
+            <small><b>Installation av spelet:</b> Användaren kan välja installationsplats, varefter launchern
+              automatiskt
+              hanterar nedladdning och installation.</small>
           </div>
         </div>
       </section>
@@ -96,17 +114,29 @@
         <div class="section-content">
           <div class="text-block">
             <h3>Vad jag lärde mig</h3>
-            <p class="prompt">Jag lärde mig mycket från detta projekt, särskilt när det gäller att skapa användarvänliga
-              gränssnitt och att förstå behovet av enkel installation och uppdatering av programvara. Jag lärde mig även
-              att utveckla och bygga system mot olika operativsystem. Detta projekt ledde mig till att införskaffa
-              enheter med olika operativsystem så som Linux och macOS för att på detta sätt kunna testa och optimera
-              launchern för olika plattformar.</p>
+            <p class="prompt">Projektet har gett mig mycket praktisk erfarenhet, särskilt inom utveckling av
+              användarvänliga gränssnitt och att ta något befintligt
+              och sedan förbättra det. Jag har även fått erfarenhet av att utveckla och testa programvara för flera
+              operativsystem vilket är något jag aldrig gjort tidigare. </p>
           </div>
+
+          <div class="text-block">
+            <p class="prompt">För att kunna testa och optimera launchern skaffade jag enheter med olika operativsystem
+              såsom Linux och macOS. Det var en ny och lärorik upplevelse att se de skillnaderna och utmaningarna som
+              uppstår vid plattformsöverskridande utveckling och hur dessa behöver hanteras för en konsekvent
+              användarupplevelse.</p>
+          </div>
+
           <div class="text-block">
             <h3>Vad jag skulle göra annorlunda</h3>
-            <p class="prompt">Om jag började igen skulle jag fokusera mer på att först skapa en minsta viable product
-              (MVP) och sedan iterera på den baserat på feedback från användare istället för att försöka skapa en
-              perfekt lösning direkt.</p>
+            <p class="prompt">Om jag började om projektet idag skulle jag ha släppt en betaversion till testgruppen
+              betydligt tidigare. Istället för att först utveckla en Minimum Viable Product (MVP) och sedan iterera på
+              lösningen utifrån användarnas feedback försökte jag skapa en så komplett lösning som möjligt redan från
+              början. Det resulterade i att flera delar senare behövde omarbetas när användarnas faktiska behov och
+              beteenden blev tydligare.
+
+              Idag hade jag istället arbetat mer iterativt, med tidigare användartester och kortare feedbackcykler, för
+              att låta användarnas erfarenheter påverka utvecklingen redan från ett tidigt skede.</p>
           </div>
         </div>
       </section>
