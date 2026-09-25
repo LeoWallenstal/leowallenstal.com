@@ -22,9 +22,14 @@
             <div class="col-lg-6">
               <span class="origin-badge origin-home mb-3 d-inline-block">Universitetsprojekt</span>
               <h1 class="hero-title mb-4">NGO</h1>
+              <img class="detail-image d-md-none mb-4" src="/assets/images/projects/ngo/ngo-display.png"
+                alt="NGO interface preview">
               <p class="hero-copy">En intranätapplikation för en fiktiv icke-statlig organisation som utvecklades i Java
                 med hjälp av Swing i
-                NetBeans, där MySQL användes för lokal databaslagring.
+                NetBeans, där MySQL användes för lokal databaslagring. I applikationen kan användare logga in och
+                hantera information kopplad till
+                organisationens verksamhet, till exempel projekt, personal, samarbetspartners och administrativa
+                uppgifter.
               </p>
               <div class="mt-4">
                 <span class="tech">MySQL</span>
@@ -32,7 +37,7 @@
                 <span class="tech">Java Swing</span>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 d-none d-md-block">
               <img class="detail-image" src="/assets/images/projects/ngo/ngo-display.png" alt="NGO interface preview">
             </div>
           </div>
@@ -46,29 +51,49 @@
         <div class="section-content">
           <div class="text-block">
             <h3>Vad jag gjorde</h3>
-            <p class="prompt">Detta var det första utvecklingsprojektet jag gjorde under min utbildning och alla i min
-              grupp hade begränsad erfarenhet av programmering. Vi satt därför väldigt mycket tillsammans och hjälpte
-              varandra med kodning, felsökning och problemlösning. Mitt huvudansvar var att utveckla funktioner för att
-              hantera användarroller och behörigheter i applikationen.
-              Jag bidrog också till att designa
-              databasstrukturen och skriva SQL-frågor för att hämta och lagra data i MySQL-databasen.
+            <p class="prompt">Detta var det första utvecklingsprojektet jag genomförde under utbildningen och hela
+              gruppen hade relativt begränsad erfarenhet av programmering. Vi arbetade därför mycket tillsammans och
+              hjälpte
+              varandra med kodning, felsökning och problemlösning. Arbetet delades upp i olika ansvarsområden men
+              samarbetade och bidrog till andra delar av projektet.
             </p>
           </div>
+
           <div class="text-block">
-            <p class="prompt">Flera av oss stötte på git-konflikter under projektets gång, vilket gav oss värdefull
-              erfarenhet av versionshantering och samarbete i ett team. Vi lärde oss att kommunicera tydligt om vilka
+            <p class="prompt">Mina huvudansvar var att utveckla funktionalitet för användarroller och behörigheter i
+              applikationen, designa och implementera gränssnitt för
+              att presentera FN:s 17 globala mål samt utveckla både gränsnitt och back-end för hantering av avdelningar.
+              Jag bidrog även till design av
+              databasstrukturen och skrev SQL-frågor för att hämta och lagra data i MySQL-databasen.</p>
+          </div>
+
+          <div class="text-block">
+            <p class="prompt">Projektet gav oss också vår första praktiska erfarenhet av Git i ett utvecklingsteam. Vi
+              lärde oss tillsammans att använda versionshantering för gemensam kodutveckling, samordna våra ändringar
+              och hantera de konflikter som kunde uppstå när flera personer arbetade parallellt i samma kodbas. Vi lärde
+              oss vikten av att kommunicera tydligt om vilka
               ändringar vi gjorde i koden och hur vi kunde lösa konflikter på ett effektivt sätt.
             </p>
           </div>
-          <div class="challenge-card">
-            <p class="eyebrow">Utmaningar & höjdpunkter</p>
-            <h3>Den största utmaningen</h3>
-            <p class="prompt">Projektet pågick över jul vilket ledde till en del utmaningar i att hålla projektet på
-              spåret och samarbeta effektivt med gruppmedlemmar under semesterperioden. Vi delade upp arbetet för att
-              kunna fortsätta individuellt och det var en utmaning när vi återförenades eftersom vi alla hade arbetat
-              med olika delar av projektet och helt plötsligt hade stora delar av kod vi inte hade någon kunskap om.</p>
-            </p>
-          </div>
+
+        </div>
+        <div class="challenge-card">
+          <p class="eyebrow">Utmaningar & höjdpunkter</p>
+          <h3>Den största utmaningen</h3>
+          <p class="prompt">Projektet pågick över jul, vilket gjorde det svårare att hålla arbetet på rätt spår och
+            samarbeta effektivt under ledigheten. Vi delade därför upp arbetet för att kunna fortsätta individuellt. När
+            vi sedan återförenades hade alla utvecklat olika delar av systemet, vilket innebar att det plötsligt fanns
+            stora delar av kodbasen som övriga gruppmedlemmar hade begränsad insyn i. Det blev en utmaning att sätta sig
+            in i varandras kod och få ihop de olika delarna till en helhet, särskilt eftersom detta var vårt första
+            större utvecklingsprojekt.</p>
+          <h3>En höjdpunkt</h3>
+          <p class="prompt">Det var väldigt roligt att få omsätta kunskaperna från den första terminen i praktiken och
+            för första gången utveckla ett större system tillsammans med andra. Alla i gruppen var engagerade och vi
+            skapade en bra miljö att lära sig i vilket gjorde det
+            lättare att arbeta tillsammans och utveckla våra färdigheter. Det var särskilt belönande att i slutet kunna
+            presentera något som vi själva hade designat
+            och utvecklat och faktiskt kände oss stolta över. Jag är fortfarande nöjd med resultatet även om jag
+            utvecklats mycket sedan dess och idag hade gjort den ännu bättre.</p>
         </div>
       </section>
       <section id="gallery" class="gallery-section" aria-labelledby="gallery-title">
@@ -80,11 +105,14 @@
         <div class="gallery-grid">
           <div class="gallery-item">
             <img class="detail-image" src="/assets/images/projects/ngo/1.png" alt="">
-            <small>Bild 1</small>
+            <small><b>Globala målen: </b>På huvudmenyn presenteras FN:s globala mål och om man klickar på en utav dem
+              får
+              man information om det specifika målet och vilken prioritet det har.</small>
           </div>
           <div class="gallery-item">
             <img class="detail-image" src="/assets/images/projects/ngo/2.png" alt="">
-            <small>Bild 2</small>
+            <small><b>Projekt: </b>Applikationen innehåller en lista över alla projekt som är kopplade till den fiktiva
+              organisationen. Man kan filtrera och sortera listan efter olika kriterier.</small>
           </div>
         </div>
       </section>
@@ -95,19 +123,20 @@
         <div class="section-content">
           <div class="text-block">
             <h3>Vad jag lärde mig</h3>
-            <p class="prompt">Stor del av arbetet bestod av problemlösning och felsökning. Vi stötte på många buggar och
-              oväntade beteenden i applikationen, vilket krävde att vi analyserade koden och
-              testade olika lösningar. Jag lärde mig mycket om hur man felsöker och identifierar problem i en Java
-              Swing-applikation, samt hur man samarbetar effektivt i ett team för att lösa problem tillsammans. Utöver
-              detta fick jag också lära mig mer om objektorienterad programmering, databasintegration och
+            <p class="prompt">Eftersom min tidigare erfarenhet inom programmering var relativt begränsad var detta
+              projekt en viktig byggsten och lärde mig mycket om hur man utvecklar och felsöker Java-applikationer. Det
+              gav mig en starkare förståelse för objektorienterad programmering, databasintegration och SQL-Queries. Jag
+              lärde mig också att arbeta i ett team och kommunicera effektivt med mina gruppmedlemmar, samt att hantera
               versionshantering genom Git.</p>
           </div>
           <div class="text-block">
-            <h3>Något som var kul</h3>
-            <p class="prompt">Det var väldigt kul att få arbeta med ett projekt som hade en tydlig användargränssnitt
-              och där vi kunde se resultatet av vårt arbete direkt. Att kunna interagera med applikationen och se hur
-              våra ändringar påverkade användarupplevelsen var mycket givande och motiverande. Jag uppskattade också
-              möjligheten att arbeta i ett team och lära mig av mina gruppmedlemmars erfarenheter och kunskaper.</p>
+            <h3>Vad jag skulle göra annorlunda</h3>
+            <p class="prompt">Med den erfarenhet jag har idag hade jag försökt behålla en bättre gemensam förståelse för
+              hela kodbasen, även när arbetet behövde delas upp. Vi hade exempelvis kunnat arbeta mer med kodgranskning
+              och regelbundna genomgångar av varandras implementationer. Det hade gjort det enklare att fortsätta arbeta
+              tillsammans när gruppen återförenades och minskat beroendet av den person som ursprungligen utvecklat en
+              viss del.
+            </p>
             </p>
           </div>
         </div>

@@ -22,19 +22,23 @@
             <div class="col-lg-6">
               <span class="origin-badge origin-home mb-3 d-inline-block">Universitetsprojekt</span>
               <h1 class="hero-title mb-4">RSS</h1>
-              <p class="hero-copy">En RSS-läsare för podcasts där användaren kan prenumerera på olika poddar och samla
-                dem i ett personligt flöde. Poddarna kan organiseras och sorteras med hjälp av egna anpassade
-                kategorier.
+              <img class="detail-image d-md-none mb-4" src="/assets/images/projects/rss/rss-display.png"
+                alt="RSS interface preview">
+              <p class="hero-copy">En RSS-läsare för podcasts utvecklad i C#/.NET med Windows Forms. Användaren kan
+                lägga till och spara podcasts via RSS-länkar och samla dem i ett personligt flöde. Poddarna kan
+                organiseras och filtreras med hjälp av egna kategorier. MongoDB användes som NoSQL-databas för att lagra
+                och hantera applikationens data.
               </p>
               <div class="mt-4">
                 <span class="tech">RSS</span>
-                <span class="tech">Git</span>
-                <span class="tech">Java Swing</span>
+                <span class="tech">C#</span>
+                <span class="tech">.NET</span>
+                <span class="tech">WinForms</span>
+                <span class="tech">MongoDB</span>
               </div>
             </div>
-            <div class="col-lg-6">
-              <img class="detail-image" src="/assets/images/projects/poddmakarna/poddmakarna-display.png"
-                alt="RSS interface preview">
+            <div class="col-lg-6 d-none d-md-block">
+              <img class="detail-image" src="/assets/images/projects/rss/rss-display.png" alt="RSS interface preview">
             </div>
           </div>
       </section>
@@ -47,33 +51,43 @@
         <div class="section-content">
           <div class="text-block">
             <h3>Vad jag gjorde</h3>
-            <p class="prompt">Applikationen utvecklades i Java med hjälp av Swing i NetBeans, där MySQL användes för
-              lokal databaslagring. Mitt huvudansvar låg inom backend-utveckling och databasdesign. Tillsammans med
-              gruppmedlemmar utvecklade jag funktioner för att läsa in RSS-flöden och hantera datan för att kunna spara
-              olika podcasts till ett personligt flöde. Därefter implementerade vi funktionalitet för att skapa olika
-              kategorier och tilldela de sparade poddarna dessa kategorier. Vi implementerade även funktionalitet för
-              att automatiskt hämta och spara information om nya podcastavsnitt.</p>
-            </p>
+            <p class="prompt">Syftet med applikationen var att skapa en RSS-baserad podcastläsare där användaren kunde
+              samla, organisera och uppdatera sina sparade poddar i ett personligt flöde. Applikationen utvecklades i
+              C#/.NET med Windows Forms som grafiskt gränssnitt och MongoDB som NoSQL-databas för lagring av poddar,
+              kategorier och avsnitt.</p>
           </div>
+
           <div class="text-block">
-            <p class="prompt">Vi stötte på flera utmaningar under projektets gång, bland annat att hantera olika
-              RSS-flöden som hade olika
-              strukturer och format. Vi behövde analysera och anpassa vår kod för att kunna läsa in dessa flöden på ett
-              korrekt sätt. Jag lärde mig mycket om hur man arbetar med RSS-flöden och hur man kan hantera olika typer
-              av
-              data i en applikation. Vi lärde oss också en hel del om versionshantering och samarbete i ett team. Vi
-              stötte på en del buggar och oväntade beteenden under projektets gång vilket gav oss värdefull erfarenhet.
-            </p>
+            <p class="prompt">Mitt huvudsakliga ansvar låg inom backend-utveckling och databasdesign. Jag arbetade med
+              att strukturera databasen, hantera kommunikationen med MongoDB samt implementera funktionalitet för att
+              läsa in och bearbeta RSS-flöden. Genom att ange en RSS-länk kunde användaren hämta podcastinformation,
+              spara podden och få tillgång till information om dess avsnitt. En teknisk utmaning var att RSS-flöden från
+              olika källor kunde skilja sig åt i struktur, metadata och format. Vi behövde därför anpassa inläsningen
+              för att hantera dessa variationer.</p>
+          </div>
+
+          <div class="text-block">
+            <p class="prompt">Vi utvecklade även funktionalitet för att skapa egna kategorier och organisera de sparade
+              poddarna utifrån dessa. Dessutom implementerade vi en uppdateringsfunktion som automatiskt kontrollerade
+              RSS-flöden efter nya podcastavsnitt.
             </p>
           </div>
-          <div class="challenge-card">
-            <p class="eyebrow">Utmaningar & höjdpunkter</p>
-            <h3>Den största utmaningen</h3>
-            <p class="prompt">Den största utmaningen var att designa ett användarvänligt gränssnitt som vi alla var
-              nöjda med. Vi diskuterade olika designalternativ och arbetade tillsammans för att skapa en användarvänlig
-              upplevelse och kompromissade fram en lösning.</p>
-            </p>
-          </div>
+
+
+        </div>
+        <div class="challenge-card">
+          <p class="eyebrow">Utmaningar & höjdpunkter</p>
+          <h3>Den största utmaningen</h3>
+          <p class="prompt">Den största utmaningen var att designa ett gränssnitt som både var användarvänligt och som
+            hela gruppen var nöjd med. Vi hade olika idéer kring hur applikationen skulle utformas och behövde därför
+            diskutera och jämföra flera designalternativ. Genom att kombinera våra idéer och kompromissa kring olika
+            lösningar lyckades vi tillsammans skapa ett gränssnitt som vi tyckte fungerade bra för applikationen.</p>
+          <h3>En höjdpunkt</h3>
+          <p class="prompt">En höjdpunkt i projektet var när vi fick de olika delarna av applikationen att fungera
+            tillsammans som en helhet. Att kunna lägga till en podcast via en RSS-länk, spara den i MongoDB, organisera
+            den med kategorier och automatiskt hämta nya avsnitt gjorde att applikationen började kännas som en färdig
+            produkt. Det var särskilt givande att se hur de olika delarna vi utvecklat tillsammans skapade ett
+            fungerande system.</p>
         </div>
       </section>
 
@@ -84,18 +98,19 @@
         <div class="section-content">
           <div class="text-block">
             <h3>Vad jag lärde mig</h3>
-            <p class="prompt">Genom att arbeta med detta projekt lärde jag mig mycket om RSS-flöden och hur man kan
-              hantera olika typer av data i en applikation. Utöver det så fick jag möjligheten att vidareutveckla mina
-              färdigheter inom grupparbete och kommunikation. Jag fick också djupare förståelse för programmering och
-              versionshantering.</p>
+            <p class="prompt">Genom projektet lärde jag mig mycket om RSS-flöden och hur data kan hämtas, bearbetas och
+              lagras i en applikation. Det var även första gången jag använde MongoDB i praktiken och arbetade med en
+              gemensam databas istället för den lokala datalagring vi använt tidigare. Att data lagrades centralt och
+              kunde hämtas och uppdateras av flera användare gjorde att projektet började kännas mer som ett verkligt
+              system. Jag fick även fördjupa mina kunskaper inom backend-utveckling, versionshantering med Git och
+              gemensam kodutveckling.</p>
           </div>
           <div class="text-block">
-            <h3>Något som var kul</h3>
-            <p class="prompt">Vi stötte på många intressanta utmaningar under projektets gång, vilket gjorde det roligt
-              att arbeta med. Det var också väldigt uppmuntrande att se hur vår kod utvecklades och hur vi kunde lösa
-              problem tillsammans. Vi stötte på flera buggar och oväntat beteende som gav oss värdefull erfarenhet och
-              det var en stor tillfredsställelse att se hur vi kunde övervinna dessa utmaningar.</p>
-            </p>
+            <h3>Vad jag skulle göra annorlunda</h3>
+            <p class="prompt">Idag hade jag vågat gå mer utanför ramarna för uppgiften och fokuserat på att göra
+              applikationen mer användbar som en faktisk podcastspelare. Exempelvis hade jag implementerat möjligheten
+              att lyssna på avsnitt direkt i applikationen och hålla reda på vilka avsnitt användaren redan lyssnat på.
+              Det hade gjort applikationen mer komplett istället för att enbart uppfylla uppgiftens krav.</p>
           </div>
         </div>
       </section>

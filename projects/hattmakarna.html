@@ -23,17 +23,21 @@
             <div class="col-lg-6">
               <span class="origin-badge origin-home mb-3 d-inline-block">Universitetsprojekt</span>
               <h1 class="hero-title mb-4">Hattmakarna</h1>
+              <img class="detail-image d-md-none mb-4" src="/assets/images/projects/hattmakarna/hattmakarna-display.png"
+                alt="Hattmakarna interface preview">
               <p class="hero-copy">Ett digitalt affärssystem till ett fiktivt företag med rollspelande kundmöten.
-                Fokuset för projektet var att arbeta enligt agila grundprinciper med hjälp av Scrum och eXtreme
-                Programming.
+                Systemet skulle användas för
+                att hantera beställningar, lagerhantering och kundtjänst. Fokuset för projektet var att
+                arbeta enligt agila grundprinciper med hjälp av Scrum och eXtreme Programming.
               </p>
               <div class="mt-4">
                 <span class="tech">Scrum</span>
                 <span class="tech">eXtreme Programming</span>
                 <span class="tech">Java Swing</span>
+                <span class="tech">Git</span>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 d-none d-md-block">
               <img class="detail-image" src="/assets/images/projects/hattmakarna/hattmakarna-display.png"
                 alt="Hattmakarna interface preview">
             </div>
@@ -49,29 +53,48 @@
           <div class="text-block">
             <h3>Vad jag gjorde</h3>
             <p class="prompt">Projektet utfördes i grupp och vi arbetade mestadels tillsammans i samma rum. Vi kunde
-              därför diskutera, parprogrammera och hjälpas åt med hela projektet. Jag arbetade främst med att designa
-              och utveckla huvudmenyn och dess funktionalitet där jag implementerade en kalendervy där man kan se alla
-              beställningar och deras status. Jag implementerade även funktionalitet för att som anställd ta på sig en
-              beställning, ändra status på beställningar och lägga till nya beställningar, detta genom att enbart dra
-              och släppa beställningar i kalendern.
+              därför diskutera, parprogrammera och hjälpas åt med hela projektet. Vi började med att diskutera
+              och dokumentera de funktioner som skulle utvecklas. Detta hjälpte oss att tidigt
+              utforma en databasstruktur som vi inte behövde ändra på under projektets gång.
             </p>
           </div>
+
           <div class="text-block">
             <p class="prompt">Vi arbetade genom hela projektet enligt Scrum och använde Scrumwise för att
-              planera och dokumentera vår arbetsprocess. Vi hjälptes åt att dokumentera de funktioner som skulle
-              utvecklas och delade upp arbetet i mindre uppgifter som planerades in i sprintar. På så sätt kunde vi
-              kontinuerligt följa projektets utveckling och anpassa arbetet efter gruppens framsteg.
+              planera och dokumentera arbetsprocessen. Funktioner dokumenterades som User Stories i en Product Backlog,
+              där arbetet prioriterades och uppskattades med Story Points. Arbetet planerades sedan in i sprintar med en
+              sprint backlog. Vi höll dagliga standups och hade sprintplanering, sprint review och sprint retrospective
+              i slutet av varje sprint.
             </p>
           </div>
-          <div class="challenge-card">
-            <p class="eyebrow">Utmaningar & höjdpunkter</p>
-            <h3>Den största utmaningen</h3>
-            <p class="prompt">En av de största utmaningarna i projektet var att tidigt fastställa hur databasen skulle
-              struktureras. Under utvecklingen av Java Swing-applikationen upptäckte vi kontinuerligt nya behov och
-              relationer mellan olika typer av data, vilket gjorde att databasstrukturen behövde justeras flera gånger.
-              Det gav oss värdefull erfarenhet av hur viktigt samspelet mellan applikation och databas är.</p>
+
+          <div class="text-block">
+            <p class="prompt">Jag arbetade främst med att designa och utveckla huvudmenyn och dess funktionalitet. Där
+              implementerade jag en kalendervy som visar alla beställningar och deras aktuella status. Jag utvecklade
+              även funktionalitet som gör det möjligt för anställda att ta ansvar för delar av eller hela beställningar.
+              Genom att dra och släppa beställningar direkt i kalendern kunde användaren dessutom enkelt ändra deras
+              status.
             </p>
           </div>
+
+
+        </div>
+        <div class="challenge-card">
+          <p class="eyebrow">Utmaningar & höjdpunkter</p>
+          <h3>Den största utmaningen</h3>
+          <p class="prompt">Även fast det var en av de roligaste och mest lärorika momentet i projektet så var
+            kundmötena lite utav en utmaning. Kunderna rollspelade personer utan teknisk kunskap vilket gjorde att
+            vi behövde tolka deras önskemål och anpassa sättet vi kommunicerade kring implementeringen av det. Ibland
+            fick vi medvetet extrema önskemål för att utmana oss i att se bortom den efterfrågade lösningen och istället
+            resonera fram ett realistiskt sätt att möta kundens behov.</p>
+          <h3>En höjdpunkt</h3>
+          <p class="prompt">
+            Vi hade en väldigt bra gruppsammanhållning och arbetade nära tillsammans genom hela projektet. Det gjorde
+            det enkelt att diskutera idéer, hjälpa varandra och samtidigt ha roligt under utvecklingen. Vi gjorde också
+            plats för lite humor i projektet genom interna skämt och små easter eggs i systemet. Det gjorde arbetet både
+            roligare och mer kreativt, samtidigt som vi hela tiden hade ett gemensamt fokus på projektets mål.
+          </p>
+          </p>
         </div>
       </section>
       <section id="gallery" class="gallery-section" aria-labelledby="gallery-title">
@@ -83,9 +106,15 @@
         <div class="gallery-grid">
           <div class="gallery-item">
             <img class="detail-image" src="/assets/images/projects/hattmakarna/1.png" alt="">
+            <small><b>Huvudmenyn: </b>Kalendern visar alla påbörjade hattar, vilken order de tillhör och i sido menyn
+              ser
+              man vem som är ansvarig.</small>
           </div>
           <div class="gallery-item">
             <img class="detail-image" src="/assets/images/projects/hattmakarna/2.png" alt="">
+            <small><b>Easter egg: </b>Klickar användaren på hattmakarens fedora dyker Agent Perry upp. En liten detalj
+              vi
+              la till under utvecklingen.</small>
           </div>
         </div>
       </section>
@@ -98,19 +127,19 @@
             <h3>Vad jag lärde mig</h3>
             <p class="prompt">Under projektet fick jag erfarenhet av att arbeta agilt och använda Scrum för att planera
               och genomföra utvecklingsarbetet. Jag utvecklade även min förmåga att samarbeta med andra utvecklare och
-              projektledare för att hålla arbetet strukturerat och inom projektets tidsramar. Tekniskt fick jag bland
-              annat lära mig mer om att använda lyssnare inom programmering, vilket var särskilt intressant eftersom det
-              var ett område vi inte hade arbetat med i tidigare kurser.</p>
+              projektledare för att hålla arbetet strukturerat och inom projektets tidsramar. Jag fick även mer
+              erfarenhet av Git som versionshantering, där flera utvecklare arbetade parallellt i samma kodbas och
+              regelbundet behövde hantera branches, merges och kodändringar. Tekniskt lärde jag mig bland annat att
+              arbeta med lyssnare, vilket var särskilt intressant eftersom det var ett område vi inte hade arbetat med i
+              tidigare kurser.</p>
           </div>
           <div class="text-block">
-            <h3>Något som var kul</h3>
-            <p class="prompt">En av de roligaste och mest lärorika delarna av projektet var kundmötena. Kunderna
-              rollspelade personer utan teknisk kunskap, vilket gjorde att vi behövde tolka deras önskemål och själva
-              avgöra vad som var tekniskt möjligt och rimligt att genomföra. Det kunde vara väldigt prövande då de
-              medvetet kom med extrema önskemål för att utmana oss, exempelvis att systemet skulle kunna skapa en
-              roterbar 3D-modell utifrån en vanlig bild. Eftersom kunden inte kunde diskutera hur en sådan funktion
-              skulle implementeras behövde vi istället fokusera på kundens faktiska behov och hitta realistiska
-              lösningar. Det gav en nyttig erfarenhet av kommunikationen mellan kund och utvecklare.
+            <h3>Vad jag skulle göra annorlunda</h3>
+            <p class="prompt">En sak jag hade gjort annorlunda är att arbeta mer strukturerat med Git. Vi använde
+              branches och pull requests på ett effektivt sätt, där kod granskades av en annan gruppmedlem innan den
+              mergades, och vi lyckades undvika större konflikter. I efterhand hade jag däremot använt tydligare
+              commit-meddelanden och avgränsat varje branch och pull request till en specifik funktion eller förändring.
+              Det hade gjort historiken tydligare och kodgranskningen enklare.
             </p>
           </div>
         </div>
